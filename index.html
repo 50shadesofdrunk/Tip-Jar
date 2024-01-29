@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and Title -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="text-center py-8 bg-blue-600 text-white shadow-lg">
+        <h1 class="text-4xl font-bold">Tip Jar</h1>
+        <p class="text-xl mt-2">Support our cause with a tip!</p>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <!-- Tip Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6">Leave a Tip</h2>
+            <input type="number" class="border-2 border-gray-300 rounded p-3 w-full mb-4 focus:outline-none focus:border-blue-500" placeholder="Enter tip amount">
+            <select class="border-2 border-gray-300 rounded p-3 w-full mb-6 focus:outline-none focus:border-blue-500">
+                <option value="paypal">PayPal</option>
+                <option value="stripe">Stripe</option>
+                <option value="applepay">Apple Pay</option>
+            </select>
+            <button class="w-full bg-green-500 hover:bg-green-600 text-white p-4 rounded transition duration-300">Tip Now</button>
+        </section>
+
+        <!-- Progress Bar Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6">Tipping Goal</h2>
+            <div class="bg-gray-300 rounded-full overflow-hidden h-8">
+                <div class="bg-green-500 h-8 rounded-full" style="width: 50%;"></div>
+            </div>
+        </section>
+
+        <!-- User Feedback and Top Contributors Sections -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6">Messages from Supporters</h2>
+            <!-- Messages will be dynamically added here -->
+        </section>
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6">Top Contributors</h2>
+            <!-- Leaderboard will be dynamically populated here -->
+        </section>
+    </main>
+
+    <footer class="text-center py-6 bg-blue-600 text-white shadow-lg">
+        <p>Contact us at: email@example.com</p>
+    </footer>
+</body>
+</html>
